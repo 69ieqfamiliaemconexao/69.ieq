@@ -169,8 +169,11 @@
     bottom: -2.5rem;
   }
   .home_quadri{
+    display: flex;
+    position: relative;
     padding: 23;
     width: 453px;
     height: 556px;
+  transform: translate()
   }
 }
