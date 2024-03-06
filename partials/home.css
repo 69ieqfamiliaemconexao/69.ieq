@@ -1,7 +1,8 @@
 /*=============== HOME ===============*/
 .home{
   background-color: #000000;
-  background-image: linear-gradient(135deg, #000000 5%, #000000 100%);}
+  background-image: linear-gradient(135deg, #000000 5%, #000000 100%);
+}
 
 .home__container {
     padding-top: 4rem;
@@ -14,13 +15,19 @@
 
 .home__title {
     font-size: var(--biggest-font-size);
-    line-height: 120%;
+    line-height: 111%;
     margin-bottom: 1.25rem;
+    max-width: 728px;
+    display: flex;
 }
 
 .home__description {
     color: var(--text-color-light);
-    margin-bottom: 2rem;
+    line-height: 300%;
+    margin-bottom: 4rem;
+    display: flex;
+    max-width: 728px;
+    position: relative;
 }
 
 .home__value{
@@ -124,7 +131,8 @@
 }
 
 /* For large devices */
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1020px) {}
+
   .home{
     padding-bottom: 0;
   }
@@ -141,15 +149,20 @@
 
   .home__data{
     padding-bottom: 4rem;
+    max-width: 728px;
+    position: relative;
   }
 
   .home__title{
     margin-bottom: 2rem;
+    max-width: 728px;
   }
 
   .home__description,
   .home__search{
     margin-bottom: 3rem;
+    padding: -29px;
+    display: flex;
   }
 
   .home__value{
@@ -169,11 +182,28 @@
     bottom: -2.5rem;
   }
   .home_quadri{
-    display: flex;
-    position: relative;
+   
     padding: 23;
     width: 453px;
     height: 556px;
+  max-width: 728px;
   transform: translate()
+  
+ }
+   
+  @media (max-width: 728px){
+
   }
-}
+  .home__description{
+    display: flex;
+    
+  }
+  @media (max-width: 728px) {
+
+  }
+  
+  @media only screen and (max-width: 700px) {}
+    label {
+      display: block;
+      cursor: pointer;
+    }
